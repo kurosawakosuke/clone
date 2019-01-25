@@ -1,4 +1,4 @@
-<h2>つぶやきをやり直す</h2>
+<h1>つぶやきをやり直す</h1>
 
 <%= form_with(model: @blog, local: true) do |form| %>
   <% if @blog.errors.any? %>
@@ -17,5 +17,5 @@
     <%= form.label :content %>
     <%= form.text_area :content %>
   </div>
-  <%= form.submit "updata"%>
+  <%= form.submit "更新"%>
 <% end %>

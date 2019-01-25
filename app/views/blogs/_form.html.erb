@@ -11,9 +11,12 @@
     </div>
   <% end %>
 
-  <div class="blog_title">
+  <div class="blog_create">
     <%= form.label :content %>
-    <%= form.text_area :content %>
+    <div class="blog_title">
+      <%= form.text_area :content %>
+    </div>
+    <%= form.submit "つぶやく"%>
   </div>
-  <%= form.submit "create"%>
+
 <% end %>

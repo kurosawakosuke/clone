@@ -20,17 +20,26 @@
 
 
 <%= form_with(model: @user, local: true) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
 
-  <%= f.label :email %>
-  <%= f.email_field :email %>
+  <div class = name_form>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+  <div class = email_form>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </div>
 
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
+  <div class = password_form>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class = password_confirmation_form>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
 
   <%= f.submit "Create my account" %>
 <% end %>

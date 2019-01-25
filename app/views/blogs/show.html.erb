@@ -6,4 +6,6 @@
     <%= link_to 'お気に入りする', favorites_path(blog_id: @blog.id), method: :post, class: 'btn btn-primary' %>
   <% end %>
 <% end %>
-<p>内容: <%= @blog.content %></p>
+<div class="jumbotron">
+  <h2>内容: <%= @blog.content %></h2>
+</div>
