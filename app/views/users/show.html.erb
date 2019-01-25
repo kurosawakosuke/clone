@@ -7,10 +7,10 @@
 <div class="container">
 
   <div class="row">
-    <% @favorites_blogs.each do |favorites_blog| %>
+    <% @favorite_blogs.each do |favorites_blog| %>
       <div class="col-xs-12 col-md-6 blog-panel">
-        <p>投稿者名：<%= blog.user.name %></p>
-        <p><%= favorite_blog.content %></p>
+        <p>投稿者名：<%= favorites_blog.user.name %></p>
+        <p><%= favorites_blog.content %></p>
       </div>
 
     <% end %>
